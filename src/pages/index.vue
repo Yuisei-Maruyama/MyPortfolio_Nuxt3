@@ -15,10 +15,13 @@ const decrement = () => {
 
 <template>
   <h1>{{ count }}</h1>
+  <h1 class="aaa">GlobalのSassが効いているかのテスト!!!!!!!!!</h1>
   <button @click="increment">Increment</button>
   <button @click="decrement">Decrement</button>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+ .aaa {
+   color: $cyber;
+ }
 </style>
