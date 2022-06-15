@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true
   },
-  css: ['@/assets/css/main.scss'],
+  css: ['@/assets/css/main.scss'], // Global CSS
   vite: {
     css: {
       preprocessorOptions: {
@@ -23,5 +23,21 @@ export default defineNuxtConfig({
           },
       },
     },
+    server: {
+      // watch: {
+      //   usePolling: true,
+      // },
+      // hmr: {
+      //   protocol: 'ws',
+      //   host: 'localhost',
+      //   // port: 7777
+      // }
+    },
   },
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  }
 })
